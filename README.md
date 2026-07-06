@@ -1,4 +1,143 @@
 # myportfolio01
+<section id="about">
+  <div class="container">
+
+    <h1>About Me</h1>
+
+    <div class="about-card">
+
+      <img src="images/profile.jpg" alt="Profile">
+
+      <div class="about-text">
+
+        <h2>ณัฐพิพัฒน์ บุญญธิรัตน์</h2>
+        <p class="subtitle">
+          นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6<br>
+          โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"
+        </p>
+
+        <p>
+          สวัสดีครับ ผมชื่อ <strong>ณัฐพิพัฒน์ บุญญธิรัตน์</strong>
+          ปัจจุบันกำลังศึกษาอยู่ระดับชั้นมัธยมศึกษาปีที่ 6
+          โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"
+          ผมเป็นคนที่สนใจด้านการสื่อสาร การเรียนรู้ภาษา
+          และการทำงานร่วมกับผู้อื่น ชอบค้นคว้าสิ่งใหม่ ๆ
+          และพัฒนาทักษะของตนเองอยู่เสมอ
+        </p>
+
+        <p>
+          ผมมีความสนใจในงานสื่อสารมวลชน เพราะเชื่อว่าสื่อเป็นเครื่องมือสำคัญ
+          ในการถ่ายทอดข้อมูล ความรู้ และเรื่องราวที่สามารถสร้างผลกระทบเชิงบวกต่อสังคมได้
+          จึงมุ่งมั่นพัฒนาทักษะการสื่อสาร การคิดวิเคราะห์ และการนำเสนอ
+          เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อในระดับมหาวิทยาลัย
+        </p>
+
+        <p>
+          นอกจากการเรียน ผมยังชอบงานออกแบบกราฟิก การถ่ายภาพ
+          การตัดต่อวิดีโอ และการสร้างสรรค์คอนเทนต์
+          ซึ่งช่วยให้ผมได้ฝึกทั้งความคิดสร้างสรรค์ ความละเอียดรอบคอบ
+          และการทำงานเป็นทีม
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+body{
+    margin:0;
+    background:#0f172a;
+    font-family:"Prompt",sans-serif;
+    color:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+#about{
+    padding:80px 0;
+}
+
+#about h1{
+    text-align:center;
+    font-size:48px;
+    color:#38bdf8;
+    margin-bottom:50px;
+}
+
+.about-card{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    background:#1e293b;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.about-card img{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#94a3b8;
+    margin-bottom:25px;
+}
+
+.about-text p{
+    line-height:1.9;
+    color:#e2e8f0;
+    margin-bottom:18px;
+}
+
+@media(max-width:768px){
+
+.about-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.about-card img{
+    width:220px;
+    height:220px;
+}
+
+}
+portfolio/
+│── index.html
+│── style.css
+│── script.js
+│
+├── images/
+│   ├── profile.jpg
+│   ├── certificate1.jpg
+│   ├── certificate2.jpg
+│   └── cover.jpg
+│
+├── pages/
+│   ├── about.html
+│   ├── sop.html
+│   ├── portfolio.html
+│   └── contact.html
+│
+└── assets/
 <!DOCTYPE html>
 <html lang="th">
 <head>
