@@ -1,43 +1,4 @@
 # myportfolio01
-<section id="about">
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - ณัฐพิพัฒน์ บุญญธิรัตน์</title>
-    <!-- นำเข้าฟอนต์ Kanit เพื่อความสวยงามและอ่านง่าย -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- เชื่อมโยงกับไฟล์ CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="about-card">
-        <!-- แนะนำให้สร้างโฟลเดอร์ assets แล้วนำรูปโปรไฟล์ไปใส่ไว้ครับ -->
-        <img src="assets/profile.jpg" alt="ณัฐพิพัฒน์ บุญญธิรัตน์">
-        
-        <div class="about-text">
-            <h3>ณัฐพิพัฒน์ บุญญธิรัตน์</h3>
-            <p class="subtitle">นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6 โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"</p>
-            
-            <p>ผมมีความสนใจด้านการสื่อสาร การเรียนรู้ภาษา และการสร้างสรรค์สื่อ เพราะเชื่อว่าสื่อสามารถถ่ายทอดข้อมูล ความรู้ และสร้างแรงบันดาลใจให้ผู้คนได้</p>
-            <p>ผมชื่นชอบการออกแบบกราฟิก การถ่ายภาพ การตัดต่อวิดีโอ และการสร้างคอนเทนต์ จึงมุ่งพัฒนาทักษะด้านการสื่อสาร เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อในคณะสื่อสารมวลชน</p>
-            
-            <div class="skills">
-                <span>Communication</span>
-                <span>Graphic Design</span>
-                <span>Photography</span>
-                <span>Video Editing</span>
-                <span>Content Creator</span>
-            </div>
-        </div>
-    </div>
-
-</body>
-</html>
 </section>
 <!DOCTYPE html>
 <html lang="th">
@@ -150,6 +111,44 @@ footer{
 <footer>
 © 2026 Portfolio | Nutpipat Boonyatirat
 </footer>
+<section id="about">
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - ณัฐพิพัฒน์ บุญญธิรัตน์</title>
+    <!-- นำเข้าฟอนต์ Kanit เพื่อความสวยงามและอ่านง่าย -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- เชื่อมโยงกับไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="about-card">
+        <!-- แนะนำให้สร้างโฟลเดอร์ assets แล้วนำรูปโปรไฟล์ไปใส่ไว้ครับ -->
+        <img src="assets/profile.jpg" alt="ณัฐพิพัฒน์ บุญญธิรัตน์">
+        
+        <div class="about-text">
+            <h3>ณัฐพิพัฒน์ บุญญธิรัตน์</h3>
+            <p class="subtitle">นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6 โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"</p>
+            
+            <p>ผมมีความสนใจด้านการสื่อสาร การเรียนรู้ภาษา และการสร้างสรรค์สื่อ เพราะเชื่อว่าสื่อสามารถถ่ายทอดข้อมูล ความรู้ และสร้างแรงบันดาลใจให้ผู้คนได้</p>
+            <p>ผมชื่นชอบการออกแบบกราฟิก การถ่ายภาพ การตัดต่อวิดีโอ และการสร้างคอนเทนต์ จึงมุ่งพัฒนาทักษะด้านการสื่อสาร เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อในคณะสื่อสารมวลชน</p>
+            
+            <div class="skills">
+                <span>Communication</span>
+                <span>Graphic Design</span>
+                <span>Photography</span>
+                <span>Video Editing</span>
+                <span>Content Creator</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 </body>
 </html>
