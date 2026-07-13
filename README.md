@@ -1,94 +1,43 @@
 # myportfolio01
 <section id="about">
-/* กำหนดฟอนต์และสไตล์พื้นฐานให้กับ Card */
-.about-card {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  background-color: #ffffff;
-  padding: 24px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  max-width: 650px;
-  margin: 20px auto;
-  font-family: 'Kanit', sans-serif; /* แนะนำให้ใช้ฟอนต์แนวโมเดิร์น */
-  transition: transform 0.3s ease;
-}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - ณัฐพิพัฒน์ บุญญธิรัตน์</title>
+    <!-- นำเข้าฟอนต์ Kanit เพื่อความสวยงามและอ่านง่าย -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- เชื่อมโยงกับไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* เพิ่มลูกเล่นเวลาเอาเมาส์ไปวาง (Hover Effect) */
-.about-card:hover {
-  transform: translateY(-5px);
-}
+    <div class="about-card">
+        <!-- แนะนำให้สร้างโฟลเดอร์ assets แล้วนำรูปโปรไฟล์ไปใส่ไว้ครับ -->
+        <img src="assets/profile.jpg" alt="ณัฐพิพัฒน์ บุญญธิรัตน์">
+        
+        <div class="about-text">
+            <h3>ณัฐพิพัฒน์ บุญญธิรัตน์</h3>
+            <p class="subtitle">นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6 โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"</p>
+            
+            <p>ผมมีความสนใจด้านการสื่อสาร การเรียนรู้ภาษา และการสร้างสรรค์สื่อ เพราะเชื่อว่าสื่อสามารถถ่ายทอดข้อมูล ความรู้ และสร้างแรงบันดาลใจให้ผู้คนได้</p>
+            <p>ผมชื่นชอบการออกแบบกราฟิก การถ่ายภาพ การตัดต่อวิดีโอ และการสร้างคอนเทนต์ จึงมุ่งพัฒนาทักษะด้านการสื่อสาร เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อในคณะสื่อสารมวลชน</p>
+            
+            <div class="skills">
+                <span>Communication</span>
+                <span>Graphic Design</span>
+                <span>Photography</span>
+                <span>Video Editing</span>
+                <span>Content Creator</span>
+            </div>
+        </div>
+    </div>
 
-/* จัดการส่วนรูปภาพโปรไฟล์ */
-.about-card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* ปรับรูปเป็นวงกลม */
-  object-fit: cover;
-  border: 3px solid #6c5ce7; /* เพิ่มเส้นขอบสีเด่นๆ ตามธีมที่ชอบ */
-  flex-shrink: 0;
-}
-
-/* จัดการส่วนกล่องข้อความ */
-.about-text {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* หัวข้อชื่อ-นามสกุล */
-.about-text h3 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #2d3436;
-}
-
-/* รายละเอียดและคำโปรย */
-.about-text p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #636e72;
-  line-height: 1.6;
-}
-
-/* จัดวางกลุ่มแท็กทักษะ (Skills) */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-/* ตกแต่งแท็กทักษะแต่ละชิ้น */
-.skills span {
-  background-color: #f1f2f6;
-  color: #57606f;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-/* ลูกเล่นเวลาชี้ไปที่แท็กทักษะ */
-.skills span:hover {
-  background-color: #6c5ce7;
-  color: #ffffff;
-}
-
-/* รองรับการแสดงผลบนมือถือ (Responsive) */
-@media (max-width: 600px) {
-  .about-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .skills {
-    justify-content: center;
-  }
-}
+</body>
+</html>
 </section>
 <!DOCTYPE html>
 <html lang="th">
