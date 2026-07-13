@@ -1,44 +1,94 @@
 # myportfolio01
 <section id="about">
-  <div class="container">
-    <h2>About Me</h2>
+/* กำหนดฟอนต์และสไตล์พื้นฐานให้กับ Card */
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 650px;
+  margin: 20px auto;
+  font-family: 'Kanit', sans-serif; /* แนะนำให้ใช้ฟอนต์แนวโมเดิร์น */
+  transition: transform 0.3s ease;
+}
 
-    <div class="about-card">
+/* เพิ่มลูกเล่นเวลาเอาเมาส์ไปวาง (Hover Effect) */
+.about-card:hover {
+  transform: translateY(-5px);
+}
 
-      <img src="assets/profile.jpg" alt="Profile">
+/* จัดการส่วนรูปภาพโปรไฟล์ */
+.about-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* ปรับรูปเป็นวงกลม */
+  object-fit: cover;
+  border: 3px solid #6c5ce7; /* เพิ่มเส้นขอบสีเด่นๆ ตามธีมที่ชอบ */
+  flex-shrink: 0;
+}
 
-      <div class="about-text">
+/* จัดการส่วนกล่องข้อความ */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
-        <h3>ณัฐพิพัฒน์ บุญญธิรัตน์</h3>
+/* หัวข้อชื่อ-นามสกุล */
+.about-text h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2d3436;
+}
 
-        <p>
-          นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6
-          โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"
-        </p>
+/* รายละเอียดและคำโปรย */
+.about-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #636e72;
+  line-height: 1.6;
+}
 
-        <p>
-          ผมมีความสนใจด้านการสื่อสาร การเรียนรู้ภาษา และการสร้างสรรค์สื่อ
-          เพราะเชื่อว่าสื่อสามารถถ่ายทอดข้อมูล ความรู้ และสร้างแรงบันดาลใจให้ผู้คนได้
-        </p>
+/* จัดวางกลุ่มแท็กทักษะ (Skills) */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
 
-        <p>
-          ผมชื่นชอบการออกแบบกราฟิก การถ่ายภาพ การตัดต่อวิดีโอ
-          และการสร้างคอนเทนต์ จึงมุ่งพัฒนาทักษะด้านการสื่อสาร
-          เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อในคณะสื่อสารมวลชน
-        </p>
+/* ตกแต่งแท็กทักษะแต่ละชิ้น */
+.skills span {
+  background-color: #f1f2f6;
+  color: #57606f;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
 
-        <div class="skills">
-          <span>Communication</span>
-          <span>Graphic Design</span>
-          <span>Photography</span>
-          <span>Video Editing</span>
-          <span>Content Creator</span>
-        </div>
+/* ลูกเล่นเวลาชี้ไปที่แท็กทักษะ */
+.skills span:hover {
+  background-color: #6c5ce7;
+  color: #ffffff;
+}
 
-      </div>
-
-    </div>
-  </div>
+/* รองรับการแสดงผลบนมือถือ (Responsive) */
+@media (max-width: 600px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .skills {
+    justify-content: center;
+  }
+}
 </section>
 <!DOCTYPE html>
 <html lang="th">
