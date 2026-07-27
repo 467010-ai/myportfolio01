@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | SOP สื่อสารมวลชน</title>
+    <title>Portfolio | ณัฐพิพัฒน์ บุญญธิรัตน์</title>
     
-    <!-- นำเข้าฟอนต์ Prompt จาก Google Fonts -->
+    <!-- Google Fonts: Prompt -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -19,11 +19,12 @@
         }
 
         body {
-            background: #111827;
-            color: white;
+            background-color: #111827;
+            color: #ffffff;
             line-height: 1.8;
         }
 
+        /* Header Zone */
         header {
             height: 100vh;
             display: flex;
@@ -31,64 +32,64 @@
             align-items: center;
             text-align: center;
             background: linear-gradient(135deg, #111827, #1e3a8a);
+            padding: 20px;
         }
 
         header h1 {
             font-size: 55px;
             font-weight: 600;
-            letter-spacing: 2px;
-            background: linear-gradient(to right, #ffffff, #60a5fa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
         header p {
             margin-top: 10px;
             font-size: 22px;
-            color: #9ca3af;
-        }
-        
-        header .faculty {
-            color: #60a5fa;
-            font-weight: 500;
+            color: #d1d5db;
         }
 
+        /* Container Section */
         section {
             max-width: 900px;
             margin: auto;
-            padding: 60px 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 40px; /* เว้นระยะห่างระหว่างการ์ด */
+            padding: 50px 25px;
         }
 
+        /* Card Component */
         .card {
             background: #1f2937;
             padding: 35px;
             border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+            margin-bottom: 40px;
         }
 
         h2 {
             color: #60a5fa;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             font-size: 32px;
-            font-weight: 500;
+            border-bottom: 2px solid #374151;
+            padding-bottom: 10px;
         }
 
         p {
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             color: #e5e7eb;
-            font-weight: 300;
+            font-size: 16px;
         }
 
-        /* ----------------------------------------------- */
-        /* ส่วนที่แก้ไขเพิ่มเติม: ปรับแต่ง About Card ให้เข้ากับ Dark Mode */
-        /* ----------------------------------------------- */
+        /* About Section Custom Layout */
         .about-card {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 30px;
+            gap: 25px;
+            text-align: center;
+        }
+
+        @media (min-width: 640px) {
+            .about-card {
+                flex-direction: row;
+                text-align: left;
+            }
         }
 
         .about-card img {
@@ -97,124 +98,90 @@
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #60a5fa;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             flex-shrink: 0;
         }
 
-        .about-text {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
         .about-text h3 {
-            font-size: 24px;
+            font-size: 26px;
             color: #ffffff;
-            font-weight: 500;
             margin-bottom: 5px;
         }
 
-        .about-text .school {
+        .subtitle {
             color: #9ca3af;
-            font-size: 16px;
-            margin-bottom: 10px;
+            font-size: 15px;
+            margin-bottom: 15px;
+            font-weight: 300;
         }
 
-        /* สไตล์ของแท็กทักษะ (Skills Tags) */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
-        }
-
-        .skills span {
-            background-color: #374151;
-            color: #9ca3af;
-            padding: 5px 14px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 400;
-            transition: all 0.2s ease;
-        }
-
-        .skills span:hover {
-            background-color: #60a5fa;
-            color: #111827;
-            transform: scale(1.05);
-        }
-
+        /* Footer */
         footer {
             text-align: center;
-            padding: 40px;
+            padding: 30px;
             color: #9ca3af;
-            font-size: 14px;
             border-top: 1px solid #1f2937;
-        }
-
-        /* รองรับการแสดงผลบนมือถือ */
-        @media (max-width: 650px) {
-            header h1 { font-size: 40px; }
-            header p { font-size: 18px; }
-            
-            .about-card {
-                flex-direction: column;
-                text-align: center;
-            }
-            .skills {
-                justify-content: center;
-            }
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
         <div>
-            <h1>PORTFOLIO</h1>
+            <h1>Portfolio</h1>
             <p>Statement of Purpose</p>
-            <p class="faculty">คณะสื่อสารมวลชน</p>
+            <p>คณะสื่อสารมวลชน</p>
         </div>
     </header>
 
+    <!-- Main Content Section -->
     <section>
         
-        <!-- การ์ดแนะนำตัว (About Card) -->
-        <div class="card">
+        <!-- About Me Card -->
+        <div id="about" class="card">
+            <h2>About Me</h2>
             <div class="about-card">
-                <!-- ตรวจสอบให้แน่ใจว่ามีรูปภาพอยู่ในโฟลเดอร์ assets/profile.jpg นะครับ -->
+                <!-- ตรวจสอบโฟลเดอร์รูปภาพ assets/profile.jpg บน GitHub ด้วยนะครับ -->
                 <img src="assets/profile.jpg" alt="ณัฐพิพัฒน์ บุญญธิรัตน์">
                 
                 <div class="about-text">
                     <h3>ณัฐพิพัฒน์ บุญญธิรัตน์</h3>
-                    <p class="school">นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6 โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"</p>
+                    <p class="subtitle">นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6 โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"</p>
                     
                     <p>ผมมีความสนใจด้านการสื่อสาร การเรียนรู้ภาษา และการสร้างสรรค์สื่อ เพราะเชื่อว่าสื่อสามารถถ่ายทอดข้อมูล ความรู้ และสร้างแรงบันดาลใจให้ผู้คนได้</p>
                     <p>ผมชื่นชอบการออกแบบกราฟิก การถ่ายภาพ การตัดต่อวิดีโอ และการสร้างคอนเทนต์ จึงมุ่งพัฒนาทักษะด้านการสื่อสาร เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อในคณะสื่อสารมวลชน</p>
-                    
-                    <div class="skills">
-                        <span>Communication</span>
-                        <span>Graphic Design</span>
-                        <span>Photography</span>
-                        <span>Video Editing</span>
-                        <span>Content Creator</span>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- การ์ดแสดงเรียงความ (SOP Card) -->
+        <!-- SOP Card -->
         <div class="card">
             <h2>Statement of Purpose</h2>
+
             <p>
                 ผมมีความสนใจด้านการสื่อสารและสื่อมวลชนมาโดยตลอด เพราะเป็นสิ่งที่อยู่รอบตัวเราในชีวิตประจำวัน ไม่ว่าจะเป็นข่าวสาร รายการโทรทัศน์ ภาพยนตร์ หรือสื่อออนไลน์ ผมชอบศึกษาวิธีการนำเสนอข้อมูลและการเล่าเรื่องที่สามารถสร้างความเข้าใจและส่งผลต่อผู้คนได้
             </p>
-            <!-- คุณสามารถพิมพ์เนื้อหา SOP ย่อหน้าถัดไปเพิ่มตรงนี้ได้เลยครับ -->
+
+            <p>
+                ในช่วงที่ศึกษาอยู่ระดับมัธยมศึกษา ผมได้พัฒนาทักษะการสื่อสารผ่านการเรียนภาษาอังกฤษ การทำงานกลุ่ม และการเข้าร่วมกิจกรรมต่าง ๆ ซึ่งช่วยให้ผมมีความกล้าแสดงออก รับฟังความคิดเห็นของผู้อื่น และสามารถทำงานร่วมกับผู้อื่นได้อย่างมีประสิทธิภาพ
+            </p>
+
+            <p>
+                ผมเลือกศึกษาต่อในสาขาสื่อสารมวลชน เพราะต้องการเรียนรู้ทั้งภาคทฤษฎีและภาคปฏิบัติเกี่ยวกับการผลิตสื่อ การสื่อสารข่าวสาร และการสร้างเนื้อหาที่มีคุณภาพ เพื่อนำความรู้ไปพัฒนาตนเองและประกอบอาชีพในสายงานสื่อในอนาคต
+            </p>
+
+            <p>
+                ผมเชื่อว่าความตั้งใจ ความรับผิดชอบ และความพร้อมในการเรียนรู้สิ่งใหม่ ๆ จะช่วยให้ผมประสบความสำเร็จในการศึกษา และสามารถเป็นส่วนหนึ่งในการสร้างสรรค์สื่อที่เป็นประโยชน์ต่อสังคมได้ในอนาคต
+            </p>
         </div>
 
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 ณัฐพิพัฒน์ บุญญธิรัตน์. All Rights Reserved.</p>
+        © 2026 Portfolio | Nutpipat Boonyatirat
     </footer>
 
 </body>
