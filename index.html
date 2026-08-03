@@ -1,114 +1,233 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | SOP สื่อสารมวลชน</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Prompt",sans-serif;
-}
-
-body{
-    background:#111827;
-    color:white;
-    line-height:1.8;
-}
-
-header{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(135deg,#111827,#1e3a8a);
-}
-
-header h1{
-    font-size:55px;
-}
-
-header p{
-    margin-top:15px;
-    font-size:22px;
-    color:#d1d5db;
-}
-
-section{
-    max-width:900px;
-    margin:auto;
-    padding:70px 25px;
-}
-
-.card{
-    background:#1f2937;
-    padding:35px;
-    border-radius:18px;
-    box-shadow:0 10px 30px rgba(0,0,0,.35);
-}
-
-h2{
-    color:#60a5fa;
-    margin-bottom:25px;
-    font-size:32px;
-}
-
-p{
-    margin-bottom:18px;
-    color:#e5e7eb;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#9ca3af;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ณัฐพิพัฒน์ บุญญาธิรัตน์ | มหาวิทยาลัยมหิดล</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Thai Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-    <div>
-        <h1>Portfolio</h1>
-        <p>Statement of Purpose</p>
-        <p>คณะสื่อสารมวลชน</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PORTFOLIO<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">ประวัติส่วนตัว</a></li>
+                <li><a href="#motivation">แรงบันดาลใจ</a></li>
+                <li><a href="#projects">ผลงาน</a></li>
+                <li><a href="#certificates">เกียรติบัตร</a></li>
+                <li><a href="#activities">กิจกรรม</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="badge">TCAS Portfolio</span>
+                <h1>นายณัฐพิพัฒน์ บุญญาธิรัตน์</h1>
+                <p class="subtitle">ว่าที่นักศึกษาสาขา <strong class="highlight">สื่อสารมวลชน</strong> มหาวิทยาลัยมหิดล</p>
+                <div class="quote-box">
+                    <i class="fas fa-quote-left"></i>
+                    <p id="typing-quote">"ทุกปัญหา มักมีทางออกเสมอ"</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">ติดต่อฉัน</a>
+                    <a href="#projects" class="btn btn-secondary">ชมผลงาน</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <div class="img-wrapper">
+                    <!-- สามารถเปลี่ยน URL รูปภาพเป็นรูปจริงของคุณได้ -->
+                    <img src="https://via.placeholder.com/380x450/002d62/ffffff?text=Nattapipat" alt="ณัฐพิพัฒน์ บุญญาธิรัตน์">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">ประวัติส่วนตัว <span>Profile</span></h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-graduation-cap card-icon"></i>
+                    <h3>การศึกษา</h3>
+                    <p><strong>ระดับชั้น:</strong> มัธยมศึกษาปีที่ 6</p>
+                    <p><strong>สายการเรียน:</strong> คณิต - อังกฤษ</p>
+                    <p><strong>โรงเรียน:</strong> กระทุ่มแบน "วิเศษสมุทคุณ"</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-user card-icon"></i>
+                    <h3>ข้อมูลทั่วไป</h3>
+                    <p><strong>ชื่อ-นามสกุล:</strong> ณัฐพิพัฒน์ บุญญาธิรัตน์</p>
+                    <p><strong>เป้าหมาย:</strong> สาขาสื่อสารมวลชน มหาวิทยาลัยมหิดล</p>
+                    <p><strong>ความสนใจ:</strong> การสร้างสรรค์สื่อดิจิทัล, การเล่าเรื่อง, ตัดต่อวิดีโอ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivation Section -->
+    <section class="section bg-light" id="motivation">
+        <div class="container">
+            <h2 class="section-title">เหตุผลที่อยากเรียนสาขานี้ <span>Motivation</span></h2>
+            <div class="motivation-box">
+                <i class="fas fa-bullhorn motivation-icon"></i>
+                <h3>ทำไมต้องสื่อสารมวลชน มหาวิทยาลัยมหิดล?</h3>
+                <p>
+                    สื่อสารมวลชนคือพลังในการขับเคลื่อนสังคมและเชื่อมโยงผู้คนเข้าด้วยกัน ในฐานะนักเรียนสายคณิต-อังกฤษ ที่มีความหลงใหลในเทคโนโลยีและการสื่อสาร ผมเชื่อมั่นว่าหลักสูตรของมหาวิทยาลัยมหิดลจะช่วยเจียระไนทักษะการเล่าเรื่อง การวิเคราะห์สื่อ และการผลิตสื่อยุคใหม่ ให้สามารถตอบโจทย์โลกดิจิทัลได้อย่างมืออาชีพ พร้อมคติประจำใจที่ยึดถือว่า <strong>"ทุกปัญหา มักมีทางออกเสมอ"</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">ผลงานเด่น <span>Projects</span></h2>
+            <div class="grid">
+                <div class="card clickable" onclick="openModal('https://via.placeholder.com/800x600/002d62/ffffff?text=Media+Project+1', 'รายการข่าวสั้นมัธยม', 'การผลิตรายการข่าวสั้นโรงเรียน ครอบคลุมการเขียนบท ถ่ายทำ และตัดต่อ')">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x250/002d62/ffffff?text=Media+Project+1" alt="Project 1">
+                    </div>
+                    <div class="card-body">
+                        <h3>รายการข่าวสั้นมัธยม</h3>
+                        <p>การผลิตรายการข่าวสั้นโรงเรียน ครอบคลุมการเขียนบท ถ่ายทำ และตัดต่อ...</p>
+                    </div>
+                </div>
+
+                <div class="card clickable" onclick="openModal('https://via.placeholder.com/800x600/002d62/ffffff?text=Short+Film', 'ภาพยนตร์สั้นรณรงค์', 'หนังสั้นสร้างสรรค์สังคม เพื่อรณรงค์กิจกรรมภายในโรงเรียน')">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x250/002d62/ffffff?text=Short+Film" alt="Project 2">
+                    </div>
+                    <div class="card-body">
+                        <h3>ภาพยนตร์สั้นรณรงค์</h3>
+                        <p>หนังสั้นสร้างสรรค์สังคม เพื่อรณรงค์กิจกรรมภายในโรงเรียน...</p>
+                    </div>
+                </div>
+
+                <div class="card clickable" onclick="openModal('https://via.placeholder.com/800x600/002d62/ffffff?text=Graphic+Design', 'สื่อกราฟิกประชาสัมพันธ์', 'ออกแบบโปสเตอร์และ Banner งานกิจกรรมโรงเรียนด้วย Photoshop & Illustrator')">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x250/002d62/ffffff?text=Graphic+Design" alt="Project 3">
+                    </div>
+                    <div class="card-body">
+                        <h3>สื่อกราฟิกประชาสัมพันธ์</h3>
+                        <p>ออกแบบโปสเตอร์และ Banner งานกิจกรรมโรงเรียนด้วย Photoshop...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="section bg-light" id="certificates">
+        <div class="container">
+            <h2 class="section-title">เกียรติบัตร <span>Certificates</span></h2>
+            <div class="grid">
+                <div class="card clickable" onclick="openModal('https://via.placeholder.com/800x600/f2a900/ffffff?text=Certificate+1', 'เกียรติบัตรการอบรมผลิตสื่อ', 'ผ่านการอบรมเชิงปฏิบัติการ การสร้างสรรค์สื่อดิจิทัลระดับมัธยมศึกษา')">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x250/f2a900/ffffff?text=Certificate+1" alt="Certificate 1">
+                    </div>
+                    <div class="card-body">
+                        <h3>การอบรมผลิตสื่อดิจิทัล</h3>
+                        <p>ผ่านการอบรมเชิงปฏิบัติการ การสร้างสรรค์สื่อดิจิทัล...</p>
+                    </div>
+                </div>
+
+                <div class="card clickable" onclick="openModal('https://via.placeholder.com/800x600/f2a900/ffffff?text=Certificate+2', 'รางวัลการแข่งขันทักษะภาษาอังกฤษ', 'รางวัลรองชนะเลิศอันดับ 1 การแข่งขันทักษะภาษาอังกฤษระดับเขตพื้นที่การศึกษา')">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x250/f2a900/ffffff?text=Certificate+2" alt="Certificate 2">
+                    </div>
+                    <div class="card-body">
+                        <h3>แข่งขันทักษะภาษาอังกฤษ</h3>
+                        <p>รางวัลรองชนะเลิศอันดับ 1 ระดับเขตพื้นที่การศึกษา...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="section" id="activities">
+        <div class="container">
+            <h2 class="section-title">กิจกรรม <span>Activities</span></h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x250/002d62/ffffff?text=Activity+1" alt="Activity 1">
+                    </div>
+                    <div class="card-body">
+                        <h3>ทีมงานประชาสัมพันธ์โรงเรียน</h3>
+                        <p>ทำหน้าที่ช่างภาพและทีมงานดูแลเพจประชาสัมพันธ์ของโรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/400x250/002d62/ffffff?text=Activity+2" alt="Activity 2">
+                    </div>
+                    <div class="card-body">
+                        <h3>กิจกรรมจิตอาสาพัฒนาชุมชน</h3>
+                        <p>เข้าร่วมกิจกรรมจิตอาสาช่วยเหลือชุมชนและกิจกรรมส่งเสริมสิ่งแวดล้อม</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-dark" id="contact">
+        <div class="container">
+            <h2 class="section-title light">ช่องทางติดต่อ <span>Contact</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>เบอร์โทรศัพท์</h4>
+                    <p><a href="tel:0825977872">082-597-7872</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4>อีเมล</h4>
+                    <p><a href="mailto:boon25auto@gmail.com">boon25auto@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>สถานศึกษา</h4>
+                    <p>โรงเรียนกระทุ่มแบน"วิเศษสมุทคุณ"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ณัฐพิพัฒน์ บุญญาธิรัตน์ - Portfolio for Mahidol University Admission</p>
+    </footer>
+
+    <!-- Modal Pop-up for Images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="Modal Image">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
     </div>
-</header>
 
-<section>
-
-<div class="card">
-
-<h2>Statement of Purpose</h2>
-
-<p>
-ผมมีความสนใจด้านการสื่อสารและสื่อมวลชนมาโดยตลอด เพราะเป็นสิ่งที่อยู่รอบตัวเราในชีวิตประจำวัน ไม่ว่าจะเป็นข่าวสาร รายการโทรทัศน์ ภาพยนตร์ หรือสื่อออนไลน์ ผมชอบศึกษาวิธีการนำเสนอข้อมูลและการเล่าเรื่องที่สามารถสร้างความเข้าใจและส่งผลต่อผู้คนได้
-</p>
-
-<p>
-ในช่วงที่ศึกษาอยู่ระดับมัธยมศึกษา ผมได้พัฒนาทักษะการสื่อสารผ่านการเรียนภาษาอังกฤษ การทำงานกลุ่ม และการเข้าร่วมกิจกรรมต่าง ๆ ซึ่งช่วยให้ผมมีความกล้าแสดงออก รับฟังความคิดเห็นของผู้อื่น และสามารถทำงานร่วมกับผู้อื่นได้อย่างมีประสิทธิภาพ
-</p>
-
-<p>
-ผมเลือกศึกษาต่อในสาขาสื่อสารมวลชน เพราะต้องการเรียนรู้ทั้งภาคทฤษฎีและภาคปฏิบัติเกี่ยวกับการผลิตสื่อ การสื่อสารข่าวสาร และการสร้างเนื้อหาที่มีคุณภาพ เพื่อนำความรู้ไปพัฒนาตนเองและประกอบอาชีพในสายงานสื่อในอนาคต
-</p>
-
-<p>
-ผมเชื่อว่าความตั้งใจ ความรับผิดชอบ และความพร้อมในการเรียนรู้สิ่งใหม่ ๆ จะช่วยให้ผมประสบความสำเร็จในการศึกษา และสามารถเป็นส่วนหนึ่งในการสร้างสรรค์สื่อที่เป็นประโยชน์ต่อสังคมได้ในอนาคต
-</p>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 Portfolio | Nutpipat Boonyatirat
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
